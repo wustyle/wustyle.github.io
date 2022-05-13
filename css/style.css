@@ -1,4 +1,6 @@
-/*Website Template by freewebsitetemplates.com*/
+/*Website Template by freewebsitetemplates.com
+   Edited by Max 
+   Posted by Max */
 @font-face {
 	font-family: 'Arimo-Bold';
 	src: url('../fonts/Arimo-Bold/Arimo-Bold.eot');
@@ -93,7 +95,7 @@ body {
 	background: url(../images/bg-nav-left-selected.gif) no-repeat top left;
 }
 #header .article {
-	background: #fff;
+	background: rgb(255, 255, 255);
 	border: 2px solid #ff9900;
 	border-radius: 4px;
 	margin: 50px auto 28px;
@@ -541,8 +543,8 @@ body {
 	color: #4c8f97;
 }
 #footer {
-	background: #4c8f96;
-	border-top: 1px solid #9bd9e0;
+	background: #ff5100;
+	border-top: 1px solid #ffffff;
 	margin: 0;
 	padding: 0;
 }
