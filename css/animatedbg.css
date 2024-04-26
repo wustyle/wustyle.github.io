@@ -1,0 +1,255 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	font-family: nexa;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 110px 100px;
+}
+@media (max-width: 1000px) {
+	section {
+		padding: 100px 50px;
+	}
+}
+@media (max-width: 600px) {
+	section {
+		padding: 125px 30px;
+	}
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 35px 100px 0;
+}
+header a {
+	text-transform: capitalize;
+	font-weight: 900;
+}
+header h2 {
+	text-transform: uppercase;
+}
+header .nav {
+	display: flex;
+}
+header .nav li {
+	margin: 0 15px;
+}
+header .nav li:first-child {
+	margin-left: 0;
+}
+header .nav li:last-child {
+	margin-right: 0;
+}
+@media (max-width: 1000px) {
+	header {
+		padding: 20px 50px;
+	}
+}
+@media (max-width: 700px) {
+	header {
+		flex-direction: column;
+	}
+	header h2 {
+		margin-bottom: 15px;
+	}
+	header .nav li {
+		margin: 0 7px;
+	}
+}
+.box {
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+.box video {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+.box h1 {
+	margin-bottom: 15px;
+	font-size: 65px;
+	text-transform: uppercase;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.box h3 {
+	margin-bottom: 40px;
+	font-size: 25px;
+}
+.box a.boxBtn {
+	padding: 15px 35px;
+	background: transparent;
+	border-radius: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	border: 4px solid #fff;
+	transition: all .5s;
+}
+.box a.boxBtn:hover {
+	background: #fff;
+	color: #000;
+}
+@media (max-width: 800px) {
+	.box {
+		min-height: 600px;
+	}
+	.box h1 {
+		font-size: 32px;
+	}
+	.box h3 {
+		font-size: 20px;
+	}
+	.box a.boxBtn {
+		padding: 15px 40px;
+	}
+}
+
+#content{
+	margin-left: 100px;
+	margin-right: 100px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #ff0000;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('../images/oneatthetop.png');
+}
+.card[for="c2"] {
+    background-image: url('../images/port.png');
+}
+.card[for="c3"] {
+    background-image: url('../images/Snow_high_fantasy_battleground_wasteland_aftermath_of_war_sunse_.png');
+}
+.card[for="c4"] {
+    background-image: url('../images/Targetting.png');
+}
+.card[for="c21"] {
+    background-image: url('../images/Targetting.png');
+}
+.card[for="c22"] {
+    background-image: url('../images/CharacterSelectorPlugin.png');
+}
+.card[for="c23"] {
+    background-image: url('../images/Orbital.png');
+}
+
+.BulletListLeft {
+	text-align: left;
+	
+}
+
+.link a {
+    color: #0004ff;
+}
