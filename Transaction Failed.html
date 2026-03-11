@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transaction Issue</title>
+<link rel="stylesheet" href="css/Transaction Failed.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>We're Sorry</h1>
+
+        <p class="message">
+            Unfortunately your transaction could not be completed.
+        </p>
+
+        <p>
+            This may happen due to a temporary issue with payment processing,
+            card verification, or network interruptions.
+        </p>
+
+        <p>
+            Please try again in a moment or use a different payment method.
+        </p>
+
+        <!-- Dropdown Error Section -->
+        <details class="error-dropdown">
+            <summary>View Error Details</summary>
+
+            <div class="error-box">
+                <p><strong>Error Code:</strong> TXN-402</p>
+                <p><strong>Description:</strong> Payment authorization failed.</p>
+                <p><strong>Reference ID:</strong> #A91F2C4</p>
+            </div>
+
+        </details>
+
+        <div class="buttons">
+            <a href="/checkout" class="button retry">Try Again</a>
+            <a href="/" class="button home">Return Home</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
